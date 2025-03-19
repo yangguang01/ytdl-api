@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+test-ytdlp/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 下载的媒体文件
+*.webm
+*.mp3
+*.mp4
+
+# 系统文件
+.DS_Store
+Thumbs.db 
