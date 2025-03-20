@@ -46,8 +46,15 @@ def download_audio_webm(url: str, custom_filename: str) -> str:
         # 强制只下载 webm 格式的最佳音频流
         'format': 'bestaudio[ext=webm]',
         'outtmpl': outtmpl,
-        'quiet': True,
-        'no_warnings': True,
+        #'quiet': True,
+        #'no_warnings': True,
+        'http_headers': {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        },
+        #'proxy': 'socks5://iGRB7RAM5ZiW46T:dBGZenlkNUslpUg@82.29.116.14:44630',
+        'proxy': 'http://iGRB7RAM5ZiW46T:dBGZenlkNUslpUg@82.29.116.14:44630',
+        # 强制使用IPv4
+        'force_ipv4': True,
     }
     
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
